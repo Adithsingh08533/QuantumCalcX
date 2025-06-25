@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuantumCalcX</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quantum Calc</h1>
+    <div class="calculator">
+      <div class="input-group">
+        <input type="number" id="num1" placeholder="Enter first number">
+      </div>
+      <div class="input-group">
+        <select id="operation">
+          <option value="add">Add</option>
+          <option value="sub">Subtract</option>
+          <option value="mul">Multiply</option>
+          <option value="div">Divide</option>
+          <option value="pow">Power</option>
+          <option value="sqrt">Square Root</option>
+          <option value="mod">Modulo</option>
+          <option value="abs">Absolute</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <input type="number" id="num2" placeholder="Enter second number (if needed)">
+      </div>
+      <button id="calculate">Calculate</button>
+      <div class="result" id="result">Result will appear here</div>
+      <div class="history">
+        <strong>Calculation History</strong>
+        <div id="history"></div>
+        <div class="action-buttons">
+          <button id="clear-history">Clear</button>
+          <button id="new-calc">New</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
